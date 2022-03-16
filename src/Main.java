@@ -6,18 +6,23 @@ public class Main {
     int b;
 
     public static void main(String[] args){
+        getNumber();
         comparison();
+
     }
     public static void getNumber(){
-        int firstNumber = new Scanner(System.in).nextInt();
-        int secondNumber = new Scanner(System.in).nextInt();
+        a = new Scanner(System.in).nextInt();
+        b = new Scanner(System.in).nextInt();
     }
     public static void comparison(){
         if (a < b) {
-            System.out.println(a);
-        }else System.out.println(b);
+            printFirst();
+        }else printSecond();
     }
-    public static void print(){
+    public static void printFirst(){
         System.out.println(a);
+    }
+    public static void printSecond(){
+        System.out.println(b);
     }
 }
